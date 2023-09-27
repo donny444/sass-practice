@@ -1,0 +1,100 @@
+@use "sass:math";
+
+$font-stack: "Open Sans", Helvetica, sans-serif;
+$text-color: #eee;
+$primary-color: HotPink;
+$secondary-color: Pink;
+$container-width: 100%;
+
+* {
+    box-sizing: border-box;
+    font-family: $font-stack;
+}
+
+body {
+    margin: 0;
+    color: $text-color;
+    background-color: $secondary-color;
+}
+
+header {
+    background-color: $primary-color;
+    text-align: center;
+    position: static;
+    display: block;
+    width: 100%;
+    padding: 1em;
+    h1 {
+        font-size: 2rem;
+    }
+}
+.container {
+    width: $container-width;
+}
+
+@mixin box($color: DarkGrey, $width: 20%, $height: 50px) {
+    background-color: $color;
+    width: $width;
+    height: $height;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $primary-color;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li { display: inline-block; }
+    a {
+        padding: 6px 12px;
+        text-decoration: none;
+        font-size: 1.4rem;
+    }
+}
+
+main {
+    text-align: center;
+    margin: 2em auto;
+    width: 50%;
+    max-width: 600px;
+    min-width: 300px;
+    background-color: $primary-color;
+    img {
+        width: 90%;
+        max-width: 500px;
+        min-width: 200px;
+    }
+}
+
+article, summary {
+    width: 80%;
+    min-width: 300px;
+    max-width: 900px;
+    background-color: $primary-color;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.container {
+    .red {
+        @include box($color: Red, $width: 30%, $height: 100px);
+    }
+    .green {
+        @include box($color: Green, $width: 60%, $height: 200px);
+    }
+    .blue {
+        @include box($color: Blue, $width: 90%, $height: 300px);
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: $primary-color;
+    padding: 0.5em;
+    span {
+        color: $secondary-color;
+    }
+}
