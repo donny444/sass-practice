@@ -1,5 +1,10 @@
-@use "sass:math";
+//Operators
+@use 'sass:math';
 
+@use 'button';
+@use 'snoopdogg';
+
+//Variables
 $font-stack: "Open Sans", Helvetica, sans-serif;
 $text-color: #eee;
 $primary-color: HotPink;
@@ -24,6 +29,7 @@ header {
     display: block;
     width: 100%;
     padding: 1em;
+    //Nesting
     h1 {
         font-size: 2rem;
     }
@@ -32,6 +38,7 @@ header {
     width: $container-width;
 }
 
+//Mixins
 @mixin box($color: DarkGrey, $width: 20%, $height: 50px) {
     background-color: $color;
     width: $width;
