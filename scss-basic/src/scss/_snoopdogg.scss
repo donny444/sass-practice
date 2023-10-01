@@ -4,4 +4,6 @@ $container-width: 60%;
 .snoopdogg {
     width: $container-width;
     background-color: $primary-color;
+    margin: 0 auto;
+    padding: 1em;
 }

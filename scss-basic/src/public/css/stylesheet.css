@@ -1,14 +1,29 @@
-@use 'sass:math';
-@use 'button';
-@use 'snoopdogg';
+.samplebutton {
+  background-color: Orange;
+  border: 0.2em solid Brown;
+  font-size: 1.6rem;
+  padding: 0.8em;
+  display: block;
+  margin: 1em auto;
+}
+
+.snoopdogg {
+  width: 60%;
+  background-color: Green;
+  margin: 0 auto;
+  padding: 1em;
+}
+
 * {
   box-sizing: border-box;
-  font-family: "Open Sans", Helvetica, sans-serif; }
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
 
 body {
   margin: 0;
   color: #eee;
-  background-color: Pink; }
+  background-color: Pink;
+}
 
 header {
   background-color: HotPink;
@@ -16,39 +31,49 @@ header {
   position: static;
   display: block;
   width: 100%;
-  padding: 1em; }
-  header h1 {
-    font-size: 2rem; }
+  padding: 1em;
+}
+header h1 {
+  font-size: 2rem;
+}
 
 .container {
-  width: 100%; }
+  width: 100%;
+}
 
 nav {
   display: flex;
   justify-content: space-evenly;
-  background-color: HotPink; }
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-  nav li {
-    display: inline-block; }
-  nav a {
-    padding: 6px 12px;
-    text-decoration: none;
-    font-size: 1.4rem; }
+  background-color: HotPink;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  padding: 6px 12px;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
 
 main {
   text-align: center;
   margin: 2em auto;
+  padding: 1em;
   width: 50%;
   max-width: 600px;
   min-width: 300px;
-  background-color: HotPink; }
-  main img {
-    width: 90%;
-    max-width: 500px;
-    min-width: 200px; }
+  background-color: HotPink;
+}
+main img {
+  width: 90%;
+  max-width: 500px;
+  min-width: 200px;
+}
 
 article, summary {
   width: 80%;
@@ -56,26 +81,32 @@ article, summary {
   max-width: 900px;
   background-color: HotPink;
   padding: 1em;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .container .red {
   background-color: Red;
   width: 30%;
-  height: 100px; }
-
+  height: 100px;
+}
 .container .green {
   background-color: Green;
   width: 60%;
-  height: 200px; }
-
+  height: 200px;
+}
 .container .blue {
   background-color: Blue;
   width: 90%;
-  height: 300px; }
+  height: 300px;
+}
 
 footer {
   text-align: center;
   background-color: HotPink;
-  padding: 0.5em; }
-  footer span {
-    color: Pink; }
+  padding: 0.5em;
+}
+footer span {
+  color: Pink;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
